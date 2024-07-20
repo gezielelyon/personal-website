@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { GitHub, Instagram, Linkedin } from "react-feather";
+import { GitHub, Linkedin, Instagram } from "react-feather";
 
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -277,61 +277,48 @@ export default function Home() {
     <main className="min-h-screen min-w-full w-full bg-black overflow-hidden">
       <Header />
 
-      <section className="mx-auto max-w-7xl h-screen flex flex-col items-center justify-center lg:justify-between lg:flex-row p-5">
-        <div className="max-w-3xl flex flex-col items-center lg:items-start gap-5">
-          <h1 className="text-white text-center lg:text-left text-4xl sm:text-5xl font-semibold">
-            Software Engineer
-          </h1>
+      <section className="mx-auto max-w-7xl h-screen flex flex-col items-center justify-center p-5 gap-5">
+        <h1 className="text-white text-center text-4xl sm:text-5xl font-semibold">
+          Software Engineer
+        </h1>
 
-          <p className="max-w-[420px] text-center leading-7 lg:text-left text-slate-11 font-normal">
-            I create experience through lines of code! In addition, I&apos;m
-            always studying and looking for new challenges, because in
-            technology change is always present and evolution must be
-            continuous!
-          </p>
+        <p className="max-w-[800px] text-center leading-7 text-slate-11 font-normal">
+          I create experience through lines of code! In addition, I&apos;m
+          always studying and looking for new challenges, because in technology
+          change is always present and evolution must be continuous!
+        </p>
 
-          <div className="flex flex-row gap-4">
-            <Link
-              href="https://github.com/gezielelyon"
-              target="_blank"
-              prefetch={false}
-              aria-label="GitHub"
-              className="p-3 rounded-lg border border-solid border-slate-6 hover:border-white transition duration-150 ease-in-out bg-black"
-            >
-              <GitHub size={22} color="#fff" />
-            </Link>
+        <div className="flex flex-row gap-4">
+          <Link
+            href="https://github.com/gezielelyon"
+            target="_blank"
+            prefetch={false}
+            aria-label="GitHub"
+            className="p-3 rounded-lg border border-solid border-slate-6 hover:border-white transition duration-150 ease-in-out bg-black"
+          >
+            <GitHub size={22} color="#fff" />
+          </Link>
 
-            <Link
-              href="https://www.linkedin.com/in/geziel-elyon-a0a1381a5/"
-              target="_blank"
-              prefetch={false}
-              aria-label="Linkedin"
-              className="p-3 rounded-lg border border-solid border-slate-6 hover:border-white transition duration-150 ease-in-out bg-black"
-            >
-              <Linkedin size={22} color="#fff" />
-            </Link>
+          <Link
+            href="https://www.linkedin.com/in/geziel-elyon-a0a1381a5/"
+            target="_blank"
+            prefetch={false}
+            aria-label="Linkedin"
+            className="p-3 rounded-lg border border-solid border-slate-6 hover:border-white transition duration-150 ease-in-out bg-black"
+          >
+            <Linkedin size={22} color="#fff" />
+          </Link>
 
-            <Link
-              href="https://www.instagram.com/gezielelyon/"
-              target="_blank"
-              prefetch={false}
-              aria-label="Instagram"
-              className="p-3 rounded-lg border border-solid border-slate-6 hover:border-white transition duration-150 ease-in-out bg-black"
-            >
-              <Instagram size={22} color="#fff" />
-            </Link>
-          </div>
+          <Link
+            href="https://www.instagram.com/gezielelyon/"
+            target="_blank"
+            prefetch={false}
+            aria-label="Instagram"
+            className="p-3 rounded-lg border border-solid border-slate-6 hover:border-white transition duration-150 ease-in-out bg-black"
+          >
+            <Instagram size={22} color="#fff" />
+          </Link>
         </div>
-
-        <figure>
-          <Image
-            src="/ipad.png"
-            height={400}
-            width={350}
-            alt="Geziel Elyon image"
-            className="z-20 relative pointer-events-none max-lg:hidden"
-          />
-        </figure>
       </section>
 
       <figure className="pointer-events-none absolute -top-20 left-0 right-0 z-0 mx-auto hidden h-full w-full select-none lg:block">
@@ -349,14 +336,14 @@ export default function Home() {
         id="companies"
         className="mx-auto max-w-7xl flex flex-col items-center p-5 mb-5"
       >
-        <div className="flex flex-col items-center gap-3">
+        <div className="flex flex-col items-center gap-2">
           <h2 className="text-white text-3xl font-semibold">Companies</h2>
           <p className="max-w-[420px] text-center leading-7 lg:text-left text-slate-11 font-normal">
             Companies that trusted and trust my work.
           </p>
         </div>
 
-        <div className="relative flex flex-wrap items-center justify-center mt-10 gap-10 md:gap-20">
+        <div className="relative grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-center mt-10 gap-10 md:gap-20">
           <Image
             src="/mais-retorno.svg"
             alt="Mais Retorno logo"
@@ -396,7 +383,7 @@ export default function Home() {
         id="technologies"
         className="mx-auto max-w-7xl flex flex-col items-center p-5 mt-12 md:mt-20 mb-16 md:mb-5"
       >
-        <div className="flex flex-col items-center gap-3">
+        <div className="flex flex-col items-center gap-2">
           <h2 className="text-white text-3xl font-semibold">Technologies</h2>
           <p className="text-center leading-7 lg:text-left text-slate-11 font-normal">
             Technologies that I have proficiency in, have worked with and/or
@@ -420,7 +407,7 @@ export default function Home() {
         id="experiences"
         className="mx-auto max-w-7xl flex flex-col items-center p-5 mt-12 md:mt-20 mb-16 md:mb-5"
       >
-        <div className="flex flex-col items-center gap-3">
+        <div className="flex flex-col items-center gap-2">
           <h2 className="text-white text-3xl font-semibold">Experiences</h2>
           <p className="text-center leading-7 lg:text-left text-slate-11 font-normal">
             Brief summary of the main experiences of my career.
@@ -443,7 +430,7 @@ export default function Home() {
 
       <section
         id="about-me"
-        className="mx-auto max-w-7xl flex flex-col items-center p-5 mt-12 md:mt-20 mb-12 md:mb-20 gap-3"
+        className="mx-auto max-w-7xl flex flex-col items-center p-5 mt-12 md:mt-20 mb-12 md:mb-20 gap-2"
       >
         <h2 className="text-white text-3xl font-semibold">About me</h2>
 

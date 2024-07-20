@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { X } from "react-feather";
 
 import { Logo } from "@/components/logo";
@@ -16,9 +15,9 @@ export const MobileMenu = ({
     <div
       className={`fixed z-50 top-0 right-0 ${
         mobileMenuIsOpened ? "translate-x-0" : "translate-x-full"
-      } w-full h-full flex-shrink-0 bg-black bg-opacity-95 transition-transform duration-500`}
+      } w-full h-full flex-shrink-0 bg-black/50 transition-transform duration-500 backdrop-blur-md`}
     >
-      <div className="fixed top-0 left-0 h-20 w-full flex-shrink-0 bg-black bg-opacity-95 flex flex-row items-center">
+      <div className="fixed top-0 left-0 h-20 w-full flex-shrink-0 bg-transparent flex flex-row items-center">
         <div className="w-full h-full max-w-[1760px] px-5 mx-auto flex items-center justify-between">
           <Logo className="w-40" />
 

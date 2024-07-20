@@ -21,6 +21,17 @@ export const Header = () => {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToSecondSection = (sectionName: string) => {
+    const section = document.getElementById(sectionName);
+
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - 70,
+        behavior: "smooth",
+      });
+    }
+  };
+
   const handleToggleMenu = (sectionName?: string) => {
     setMobileMenuIsOpened(!mobileMenuIsOpened);
 
@@ -31,14 +42,7 @@ export const Header = () => {
     }
 
     if (sectionName) {
-      const section = document.getElementById(sectionName);
-
-      if (section) {
-        window.scrollTo({
-          top: section.offsetTop - 50,
-          behavior: "smooth",
-        });
-      }
+      scrollToSecondSection(sectionName);
     }
   };
 
@@ -46,31 +50,42 @@ export const Header = () => {
     <>
       <header
         className={`fixed top-0 left-0 z-50 h-20 w-full flex-shrink-0 ${
-          scrolling
-            ? "bg-black bg-opacity-95"
-            : "bg-opacity-0 border-none shadow-none"
-        }shadow border-b border-slate-6 flex flex-row items-center transition-all duration-300`}
+          !scrolling &&
+          "bg-transparent border-none shadow-none backdrop-blur-none"
+        }bg-black/50 border-b border-slate-6 flex flex-row items-center transition duration-500 ease-in-out backdrop-blur-md`}
       >
         <div className="w-full h-full max-w-7xl px-5 mx-auto flex items-center justify-between">
           <Logo className="h-10 w-40" />
 
           <ul className="max-lg:hidden flex flex-row items-center gap-10 lg:-ml-24">
             <li>
-              <p className="text-slate-11 hover:text-white transition duration-150 ease-in-out cursor-pointer">
+              <button
+                aria-label="Companies"
+                onClick={() => scrollToSecondSection("companies")}
+                className="text-slate-11 hover:text-white transition duration-150 ease-in-out cursor-pointer"
+              >
                 Companies
-              </p>
+              </button>
             </li>
 
             <li>
-              <p className="text-slate-11 hover:text-white transition duration-150 ease-in-out cursor-pointer">
+              <button
+                aria-label="Technologies"
+                onClick={() => scrollToSecondSection("technologies")}
+                className="text-slate-11 hover:text-white transition duration-150 ease-in-out cursor-pointer"
+              >
                 Technologies
-              </p>
+              </button>
             </li>
 
             <li>
-              <p className="text-slate-11 hover:text-white transition duration-150 ease-in-out cursor-pointer">
+              <button
+                aria-label="Experiences"
+                onClick={() => scrollToSecondSection("experiences")}
+                className="text-slate-11 hover:text-white transition duration-150 ease-in-out cursor-pointer"
+              >
                 Experiences
-              </p>
+              </button>
             </li>
           </ul>
 
