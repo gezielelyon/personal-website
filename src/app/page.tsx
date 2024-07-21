@@ -185,12 +185,12 @@ export default function Home() {
       name: "GraphQL",
     },
     {
-      imageSrc: "/technologies/mongo.svg",
+      imageSrc: "/technologies/mongodb.svg",
       imageAlt: "MongoDB logo",
       name: "MongoDB",
     },
     {
-      imageSrc: "/technologies/firebase.svg",
+      imageSrc: "/technologies/google-firebase.svg",
       imageAlt: "Firebase logo",
       name: "Firebase",
     },

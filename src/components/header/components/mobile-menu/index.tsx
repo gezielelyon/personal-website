@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { X } from "react-feather";
 
 import { Logo } from "@/components/logo";
@@ -62,14 +63,14 @@ export const MobileMenu = ({
         </li>
 
         <li className="mx-auto">
-          <a
+          <Link
             href="/cv.pdf"
-            download
+            download={true}
             aria-label="Curriculum"
             className="font-semibold rounded-lg hover:opacity-80 hover:transition hover:duration-300 bg-white text-black h-12 px-5 flex items-center justify-center"
           >
             Curriculum
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { Menu } from "react-feather";
 import { useState, useEffect } from "react";
 
@@ -89,14 +90,14 @@ export const Header = () => {
             </li>
           </ul>
 
-          <a
+          <Link
             href="/cv.pdf"
-            download
+            download={true}
             aria-label="Download curriculum"
-            className="max-lg:hidden font-semibold rounded-lg hover:opacity-80 hover:transition hover:duration-300 bg-white text-zero-tributo-black h-10 px-4 flex items-center justify-center"
+            className="max-lg:hidden font-semibold rounded-lg hover:opacity-80 hover:transition hover:duration-300 bg-white text-black h-10 px-4 flex items-center justify-center"
           >
             Curriculum
-          </a>
+          </Link>
 
           <button
             className="h-full flex items-center justify-center lg:hidden"
