@@ -50,10 +50,11 @@ export const Header = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 z-50 h-20 w-full flex-shrink-0 ${
-          !scrolling &&
-          "bg-transparent border-none shadow-none backdrop-blur-none"
-        }bg-black/50 border-b border-slate-6 flex flex-row items-center transition duration-500 ease-in-out backdrop-blur-md`}
+        className={`fixed top-0 left-0 z-50 h-20 w-full flex-shrink-0 border-b border-slate-6 flex flex-row items-center transition duration-300 ease-in-out ${
+          !scrolling
+            ? "bg-transparent bg-opacity-0 border-none shadow-none backdrop-blur-none backdrop-opacity-0"
+            : "backdrop-blur-md bg-black/50"
+        }`}
       >
         <div className="w-full h-full max-w-7xl px-5 mx-auto flex items-center justify-between">
           <Logo className="h-10 w-40" />

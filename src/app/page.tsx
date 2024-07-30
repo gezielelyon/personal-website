@@ -300,7 +300,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href="https://www.linkedin.com/in/geziel-elyon-a0a1381a5/"
+            href="https://www.linkedin.com/in/gezielelyon/?locale=en_US"
             target="_blank"
             prefetch={false}
             aria-label="Linkedin"
