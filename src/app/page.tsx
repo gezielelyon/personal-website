@@ -253,7 +253,7 @@ export default function Home() {
       title: "Stone - Fullstack Developer",
       period: "January 2024 - Present / Rio de Janeiro, Brazil.",
       description:
-        "Today I'm part of the platform team called CodeFlow. We are responsible for creating products and services for the engineering teams, for analyzing and granting access to the company's assets, and for creating security solutions for the company.",
+        "I am part of the platform and experience team called CodeFlow. We are responsible for creating products and services for engineering teams, analyzing, granting and revoking access to company assets and creating security solutions to protect the company's intellectual property.",
     },
     {
       imageSrc: "/pagarme-square-logo.svg",
@@ -261,7 +261,7 @@ export default function Home() {
       title: "Pagar.me - Backend Developer",
       period: "September 2022 - December 2023 / Rio de Janeiro, Brazil.",
       description:
-        "I was part of the Atlas team and we were responsible for the entire reading layer, for attacking technical debts and for making performance improvements across all systems, working horizontally with the other teams in the company.",
+        "I was part of the Atlas team and we were responsible for the entire reading layer, for attacking technical debts and making performance improvements in several of the company's applications and services, working horizontally with the company's other teams.",
     },
     {
       imageSrc: "/mais-retorno-square-logo.svg",
@@ -320,17 +320,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
-      <figure className="pointer-events-none absolute -top-20 left-0 right-0 z-0 mx-auto hidden h-full w-full select-none lg:block">
-        <Image
-          src="/bghero.png"
-          alt="Light ray background"
-          width={2048}
-          height={1000}
-          priority
-          className="top-0 right-0 absolute"
-        />
-      </figure>
 
       <section
         id="companies"
