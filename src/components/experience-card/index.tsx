@@ -5,7 +5,8 @@ interface ExperienceCardProps {
   imageAlt: string;
   title: string;
   period: string;
-  description: string;
+  context: string;
+  achievements: string[];
 }
 
 export const ExperienceCard = ({
@@ -13,7 +14,8 @@ export const ExperienceCard = ({
   imageAlt,
   title,
   period,
-  description,
+  context,
+  achievements,
 }: ExperienceCardProps) => {
   return (
     <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 p-5 rounded-xl border border-solid border-slate-6 bg-black text-white">
@@ -28,10 +30,26 @@ export const ExperienceCard = ({
         <h3 className="text-white text-2xl text-center sm:text-left font-medium">
           {title}
         </h3>
+
         <p className="text-slate-11 text-center sm:text-left mt-2 mb-5">
           {period}
         </p>
-        <p className="text-white text-center sm:text-left">{description}</p>
+
+        <div>
+          <h4 className="font-bold">Context:</h4>
+          <p className="text-white font-light text-left mt-1">{context}</p>
+        </div>
+
+        <div>
+          <h4 className="font-bold mt-3">Achievements:</h4>
+          <ul className="mt-1">
+            {achievements.map((achievement, index) => (
+              <li key={index} className="font-light">
+                {achievement}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

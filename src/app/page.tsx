@@ -250,26 +250,41 @@ export default function Home() {
     {
       imageSrc: "/stone-square-logo.svg",
       imageAlt: "Stone logo",
-      title: "Stone - Fullstack Developer",
+      title: "Stone - Software Engineer",
       period: "January 2024 - Present / Rio de Janeiro, Brazil.",
-      description:
-        "I am part of the platform and experience team called CodeFlow. We are responsible for creating products and services for engineering teams, analyzing, granting and revoking access to company assets and creating security solutions to protect the company's intellectual property.",
+      context:
+        "Stone is one of the biggest payments companies in Brazil and Latin America. It offers payments and banking services to other big companies, so there are millions of users using its systems every day. I'm part of the platform and experience team.",
+      achievements: [
+        "I created 5 new applications for engineering teams including security services to facilitate the analyzing, granting and revoking access to company assets.",
+        "I created 3 big security automations systems to protect the company's intellectual property like the codes on Github and the client's data.",
+        "I made code refactorings and improvements in several legacy applications using Clean Code, Clean Architecture, Design Patterns and SOLID.",
+      ],
     },
     {
       imageSrc: "/pagarme-square-logo.svg",
       imageAlt: "Pagar.me logo",
-      title: "Pagar.me - Backend Developer",
+      title: "Pagar.me - Software Engineer",
       period: "September 2022 - December 2023 / Rio de Janeiro, Brazil.",
-      description:
-        "I was part of the Atlas team and we were responsible for the entire reading layer, for attacking technical debts and making performance improvements in several of the company's applications and services, working horizontally with the company's other teams.",
+      context:
+        "Pagar.me is one of the biggest payment gateway in Brazil. I was part of the Atlas team and we were responsible for the entire reading layer, for attacking technical debts and making performance improvements in several of the company's applications and services, working horizontally with the company's other teams.",
+      achievements: [
+        "I increased performance by 30% in reading layer applications and brought more reliability in storage data.",
+        "I helped in the planning and development of a new reading layer model with the aim of reducing response time and increasing the security and reliability of stored information.",
+        "I made code refactorings and improvements in several legacy applications using Clean Code, Clean Architecture, Design Patterns and SOLID.",
+      ],
     },
     {
       imageSrc: "/mais-retorno-square-logo.svg",
       imageAlt: "Mais Retorno logo",
       title: "Mais Retorno - Fullstack Developer",
       period: "June 2021 - August 2022 / São Paulo, Brazil.",
-      description:
-        "I actively participated in the frontend (Site) and backend (APIs), creating new features, making performance improvements, refactoring the code with good practices, improving SEO on the pages, and creating new tools such as the asset comparator, income simulator, user signatures, share sheets, government bonds and direct treasury.",
+      context:
+        "Mais Retorno is a financial market and education company. It offers many tools for investors. I was responsible for planning, developing and improving new tools and products for the financial market, for fixing bugs and for helping my coworkers.",
+      achievements: [
+        "I built new tools, such as the asset comparator, income simulator, fund tracker, fund and stock sheets, government bonds and direct treasury.",
+        "I created a complete recurring subscription system for members.",
+        "I made several SEO improvements in the company's main web application.",
+      ],
     },
   ];
 
@@ -277,15 +292,17 @@ export default function Home() {
     <main className="min-h-screen min-w-full w-full bg-black overflow-hidden">
       <Header />
 
-      <section className="mx-auto max-w-7xl h-screen flex flex-col items-center justify-center p-5 gap-5">
-        <h1 className="text-white text-center text-4xl sm:text-5xl font-semibold">
+      <section className="mx-auto max-w-7xl h-screen flex flex-col items-center justify-center p-5 gap-5 max-sm:mt-5">
+        <h1 className="text-white text-center text-3xl sm:text-5xl font-semibold">
           Software Engineer
         </h1>
 
-        <p className="max-w-[800px] text-center leading-7 text-slate-11 font-normal">
-          I create experience through lines of code! In addition, I&apos;m
-          always studying and looking for new challenges, because in technology
-          change is always present and evolution must be continuous!
+        <p className="max-w-5xl text-center leading-7 text-slate-11 font-normal">
+          Experienced Software Engineer with a background in planning,
+          developing, scaling, architecting, securing, and maintaining
+          large-scale web applications, microservices, and APIs in critical
+          environments, serving millions of users daily, for the financial,
+          banking, education and security sectors.
         </p>
 
         <div className="flex flex-row gap-4">
@@ -411,7 +428,8 @@ export default function Home() {
               imageAlt={experience.imageAlt}
               title={experience.title}
               period={experience.period}
-              description={experience.description}
+              context={experience.context}
+              achievements={experience.achievements}
             />
           ))}
         </div>
