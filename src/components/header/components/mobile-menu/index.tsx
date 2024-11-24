@@ -20,7 +20,7 @@ export const MobileMenu = ({
     >
       <div className="fixed top-0 left-0 h-20 w-full flex-shrink-0 bg-transparent flex flex-row items-center">
         <div className="w-full h-full max-w-[1760px] px-5 mx-auto flex items-center justify-between">
-          <Logo className="w-40" />
+          <Logo className="h-10 w-48" />
 
           <button
             aria-label="Close menu button"

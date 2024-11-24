@@ -57,7 +57,7 @@ export const Header = () => {
         }`}
       >
         <div className="w-full h-full max-w-7xl px-5 mx-auto flex items-center justify-between">
-          <Logo className="h-10 w-40" />
+          <Logo className="h-10 w-48" />
 
           <ul className="max-lg:hidden flex flex-row items-center gap-10 lg:-ml-24">
             <li>

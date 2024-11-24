@@ -1,15 +1,15 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 type Props = {
-  height?: number
-  width?: number
-  className?: string
-}
+  height?: number;
+  width?: number;
+  className?: string;
+};
 
-export const Logo = ({ height = 80, width = 150, className }: Props) => {
+export const Logo = ({ height = 80, width = 250, className }: Props) => {
   return (
     <Image
-      src="/logo.png"
+      src="/logo.svg"
       alt="Geziel Elyon logo"
       height={height}
       width={width}
@@ -17,5 +17,5 @@ export const Logo = ({ height = 80, width = 150, className }: Props) => {
       priority={true}
       className={className}
     />
-  )
-}
+  );
+};
