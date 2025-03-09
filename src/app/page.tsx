@@ -299,7 +299,7 @@ export default function Home() {
 
         <p className="max-w-5xl text-center leading-7 text-slate-11 font-normal">
           Experienced Software Engineer with a background in planning,
-          developing, scaling, architecting, securing, and maintaining
+          developing, architecting, scaling, securing, and maintaining
           large-scale web applications, microservices, and APIs in critical
           environments, serving millions of users daily, for the financial,
           banking, education and security sectors.
