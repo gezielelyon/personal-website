@@ -31,7 +31,7 @@ export const ExperienceCard = ({
           {title}
         </h3>
 
-        <p className="text-slate-11 text-center sm:text-left mt-2 mb-5">
+        <p className="text-slate-11 text-center sm:text-left mb-5">
           {period}
         </p>
 
@@ -42,9 +42,9 @@ export const ExperienceCard = ({
 
         <div>
           <h4 className="font-bold mt-3">Achievements:</h4>
-          <ul className="mt-1">
+          <ul className="mt-1 list-disc ml-4">
             {achievements.map((achievement, index) => (
-              <li key={index} className="font-light">
+              <li key={index} className="font-light my-1">
                 {achievement}
               </li>
             ))}

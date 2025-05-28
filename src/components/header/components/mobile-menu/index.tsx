@@ -64,7 +64,7 @@ export const MobileMenu = ({
 
         <li className="mx-auto">
           <Link
-            href="/cv.pdf"
+            href="/software-engineer.pdf"
             download={true}
             aria-label="Curriculum"
             className="font-semibold rounded-lg hover:opacity-80 hover:transition hover:duration-300 bg-white text-black h-12 px-5 flex items-center justify-center"

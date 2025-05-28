@@ -92,7 +92,7 @@ export const Header = () => {
           </ul>
 
           <Link
-            href="/cv.pdf"
+            href="/software-engineer.pdf"
             download={true}
             aria-label="Download curriculum"
             className="max-lg:hidden font-semibold rounded-lg hover:opacity-80 hover:transition hover:duration-300 bg-white text-black h-10 px-4 flex items-center justify-center"

@@ -255,9 +255,9 @@ export default function Home() {
       context:
         "Stone is one of the biggest payments and finance companies in Brazil and Latin America. It offers payments and banking services to other big companies, so there are millions of users using its systems every day. I'm part of the platform and experience team.",
       achievements: [
-        "I created new products for engineering teams including security applications to facilitate the analyzing, granting and revoking access to company assets.",
-        "I created several security automations systems to validate and protect the company's intellectual property such as the client's data and the codes on Github avoiding leak of private information.",
-        "I made code refactoring and performance improvements in several legacy applications using good practices such as Clean Code, Clean Architecture, Design Patterns and SOLID.",
+        "I created security automations systems to validate and protect the company's intellectual property such as Codes, Assets and importante services.",
+        "I created new products for engineering teams including applications to facilitate the analyzing, granting, revoking and auditing the access to company assets.",
+        "I did code refactoring and performance improvements in several legacy applications using good practices such as Clean Code, Clean Architecture, Design Patterns and SOLID.",
       ],
     },
     {
@@ -266,11 +266,11 @@ export default function Home() {
       title: "Pagar.me - Software Engineer",
       period: "September 2022 - December 2023 / Rio de Janeiro, Brazil.",
       context:
-        "Pagar.me is one of the biggest payments and finance companies in Brazil. I was responsible for the entire reading layer, for attacking technical debts and making performance improvements in several of the company's applications and services, working horizontally with the company's other teams.",
+        "Pagar.me is one of the biggest payments and finance companies in Brazil. I was responsible for all the entire reading layer, for making performance improvements, code refactoring and attacking technical debts in several applications and services, working horizontally with all the company's teams.",
       achievements: [
-        "I increased performance by 30% in reading layer applications and brought more reliability in storage data.",
-        "I helped in the planning and development of a new reading layer model with the aim of reducing response time and increasing the security and reliability of stored information.",
-        "I made code refactoring and performanc improvements in several legacy applications using good practices such as Clean Code, Clean Architecture, Design Patterns and SOLID.",
+        "I created a new reading layer model based on an event architecture using queue technologies that increased the performance by 30%, reduced operational cost and brought more reliability and consistency in storage data.",
+        "I created important payments solutions that brought more clients and money to the company such as payment split, finance reports and dashboards, transfer security validations and authorization services.",
+        "I did code refactoring and performance improvements in several legacy applications using good practices such as Clean Code, Clean Architecture, Design Patterns and SOLID.",
       ],
     },
     {
@@ -281,9 +281,9 @@ export default function Home() {
       context:
         "Mais Retorno is a financial market and education company. It offers many tools for investors. I was responsible for planning, developing and improving new tools and products for the financial market, for fixing bugs and for helping my coworkers.",
       achievements: [
-        "I built new and complex tools for the financial market such as the assets and funds comparator, income simulator, fund tracker, fund and stock sheets, government bonds and direct treasury.",
-        "I created a complete recurring subscription system for members have access to private finance tools and advantages.",
-        "I made SEO improvements and code refactoring in several applications and services using good practices such as Clean Code, Clean Architecture, Design Patterns and SOLID.",
+        "I built new and complex tools for the financial market that brought more clients and money to the company such as the assets and funds comparator, income simulator, fund tracker, fund and stock sheets, government bonds and direct treasury.",
+        "I created a complete recurring subscription system so that members can have access to private financial tools, exclusive benefits and the company has a recurring monthly income.",
+        "I did performance, SEO, accessibility, design and code refactoring in several web applications and services using good practices such as Clean Code, Clean Architecture, Design Patterns and SOLID.",
       ],
     },
   ];
@@ -292,17 +292,13 @@ export default function Home() {
     <main className="min-h-screen min-w-full w-full bg-black overflow-hidden">
       <Header />
 
-      <section className="mx-auto max-w-7xl h-screen flex flex-col items-center justify-center p-5 gap-5 max-sm:mt-5">
+      <section className="mx-auto max-w-7xl h-screen flex flex-col items-center justify-center p-5 gap-8 max-sm:mt-5">
         <h1 className="text-white text-center text-3xl sm:text-5xl font-semibold">
           Software Engineer
         </h1>
 
         <p className="max-w-5xl text-center leading-7 text-slate-11 font-normal">
-          Experienced Software Engineer with a background in planning,
-          developing, scaling, architecting, securing, and maintaining
-          large-scale web applications, microservices, and APIs in critical
-          environments, serving millions of users daily, for the financial,
-          banking, education and security sectors.
+          Brazilian software engineer with more than 5 years of professional experience and a background in planning, architecting, developing, scaling, securing, and maintaining large-scale web applications, microservices, and APIs in critical environments, serving millions of users daily, for the financial, banking, payment, e-commerce, education and security sectors.
         </p>
 
         <div className="flex flex-row gap-4">
@@ -342,14 +338,14 @@ export default function Home() {
         id="companies"
         className="mx-auto max-w-7xl flex flex-col items-center p-5 mb-5"
       >
-        <div className="flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center gap-1">
           <h2 className="text-white text-3xl font-semibold">Companies</h2>
           <p className="max-w-[420px] text-center leading-7 lg:text-left text-slate-11 font-normal">
             Companies that trusted and trust my work.
           </p>
         </div>
 
-        <div className="relative grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-center mt-10 gap-10 md:gap-20">
+        <div className="relative grid grid-cols-1 lg:grid-cols-3 items-center mt-10 gap-10 lg:gap-28">
           <Image
             src="/mais-retorno.svg"
             alt="Mais Retorno logo"
@@ -374,14 +370,6 @@ export default function Home() {
             priority
             className="max-w-52 sm:max-w-64"
           />
-          <Image
-            src="/zero-tributo.svg"
-            alt="Zero Tributo logo"
-            width={250}
-            height={100}
-            priority
-            className="max-w-52 sm:max-w-64"
-          />
         </div>
       </section>
 
@@ -389,7 +377,7 @@ export default function Home() {
         id="technologies"
         className="mx-auto max-w-7xl flex flex-col items-center p-5 mt-12 md:mt-20 mb-16 md:mb-5"
       >
-        <div className="flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center gap-1">
           <h2 className="text-white text-3xl font-semibold">Technologies</h2>
           <p className="text-center leading-7 lg:text-left text-slate-11 font-normal">
             Technologies that I have proficiency in, have worked with and/or
@@ -413,7 +401,7 @@ export default function Home() {
         id="experiences"
         className="mx-auto max-w-7xl flex flex-col items-center p-5 mt-12 md:mt-20 mb-16 md:mb-5"
       >
-        <div className="flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center gap-1">
           <h2 className="text-white text-3xl font-semibold">Experiences</h2>
           <p className="text-center leading-7 lg:text-left text-slate-11 font-normal">
             Brief summary of the main experiences of my career.
