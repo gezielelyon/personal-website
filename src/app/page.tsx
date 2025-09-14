@@ -248,10 +248,26 @@ export default function Home() {
 
   const experiences = [
     {
+      imageSrc: "/wellhub-square-logo.svg",
+      imageAlt: "Wellhub logo",
+      title: "Wellhub - Software Engineer",
+      period: "August 2025 - Present / New York, US.",
+      context:
+        "Wellhub is a global corporate wellness platform, present in 12 countries, connecting employees to gyms, therapy, nutrition, mindfulness, and sleep through a single subscription. I joined the Billing Platform team, responsible for the billing experience that serves the entire business, processing millions of transactions for users and companies worldwide. Our focus is to deliver efficient checkout and account management solutions, ensuring optimized conversion and scalability to support global growth.",
+      activities: [
+        "Develop and maintain solutions focused on payments, billing, and the checkout experience.",
+        "Work with cross-functional teams and payment providers to improve global conversion and efficiency in billing flows.",
+        "Research and execute strategic projects that impact B2B and B2C, including the creation of new payment mechanisms.",
+        "Implement prototypes and experiments using practices such as MVP, A/B testing, and feature toggles for controlled rollout.",
+        "Solve challenges related to scalability, systems architecture, and code quality.",
+        "Ensure quality through automated testing and best engineering practices.",
+      ],
+    },
+    {
       imageSrc: "/stone-square-logo.svg",
       imageAlt: "Stone logo",
       title: "Stone - Software Engineer",
-      period: "January 2024 - Present / Rio de Janeiro, Brazil.",
+      period: "January 2024 - August 2024 / Rio de Janeiro, Brazil.",
       context:
         "Stone is one of the biggest payments and finance companies in Brazil and Latin America. It offers payments and banking services to other big companies, so there are millions of users using its systems every day. I'm part of the platform and experience team.",
       achievements: [
@@ -298,7 +314,7 @@ export default function Home() {
         </h1>
 
         <p className="max-w-5xl text-center leading-7 text-slate-11 font-normal">
-          Brazilian software engineer with more than 5 years of professional experience and a background in planning, architecting, developing, scaling, securing, and maintaining large-scale web applications, microservices, and APIs in critical environments, serving millions of users daily, for the financial, banking, payment, e-commerce, education and security sectors.
+          Brazilian software engineer with more than 5 years of professional experience and a background in planning, architecting, developing, scaling, securing, and maintaining large-scale web applications, microservices, and APIs in critical environments, serving millions of users daily, for the financial, banking, payment, e-commerce, education, security, health and wellbeing sectors.
         </p>
 
         <div className="flex flex-row gap-4">
@@ -313,7 +329,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href="https://www.linkedin.com/in/gezielelyon/?locale=en_US"
+            href="https://www.linkedin.com/in/gezielelyon"
             target="_blank"
             prefetch={false}
             aria-label="Linkedin"
@@ -345,14 +361,14 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="relative grid grid-cols-1 lg:grid-cols-3 items-center mt-10 gap-10 lg:gap-28">
+        <div className="relative grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 items-center mt-10 gap-10 lg:gap-16 xl:gap-20">
           <Image
             src="/mais-retorno.svg"
             alt="Mais Retorno logo"
             width={250}
             height={100}
             priority
-            className="max-w-52 sm:max-w-64"
+            className="max-w-52 sm:max-w-72"
           />
           <Image
             src="/pagarme.svg"
@@ -360,7 +376,7 @@ export default function Home() {
             width={250}
             height={100}
             priority
-            className="max-w-52 sm:max-w-64"
+            className="max-w-52 sm:max-w-72"
           />
           <Image
             src="/stone.svg"
@@ -368,7 +384,15 @@ export default function Home() {
             width={250}
             height={100}
             priority
-            className="max-w-52 sm:max-w-64"
+            className="max-w-52 sm:max-w-72"
+          />
+          <Image
+            src="/wellhub.svg"
+            alt="Wellhub logo"
+            width={250}
+            height={100}
+            priority
+            className="max-w-52 sm:max-w-72"
           />
         </div>
       </section>
@@ -418,6 +442,7 @@ export default function Home() {
               period={experience.period}
               context={experience.context}
               achievements={experience.achievements}
+              activities={experience.activities}
             />
           ))}
         </div>
