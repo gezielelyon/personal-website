@@ -267,7 +267,7 @@ export default function Home() {
       imageSrc: "/stone-square-logo.svg",
       imageAlt: "Stone logo",
       title: "Stone - Software Engineer",
-      period: "January 2024 - August 2024 / Rio de Janeiro, Brazil.",
+      period: "January 2024 - August 2025 / Rio de Janeiro, Brazil.",
       context:
         "Stone is one of the biggest payments and finance companies in Brazil and Latin America. It offers payments and banking services to other big companies, so there are millions of users using its systems every day. I'm part of the platform and experience team.",
       achievements: [
