@@ -254,13 +254,10 @@ export default function Home() {
       period: "August 2025 - Present / New York, US.",
       context:
         "Wellhub is a global corporate wellness platform, present in 12 countries, connecting employees to gyms, therapy, nutrition, mindfulness, and sleep through a single subscription. I joined the Billing Platform team, responsible for the billing experience that serves the entire business, processing millions of transactions for users and companies worldwide. Our focus is to deliver efficient checkout and account management solutions, ensuring optimized conversion and scalability to support global growth.",
-      activities: [
-        "Develop and maintain solutions focused on payments, billing, and the checkout experience.",
-        "Work with cross-functional teams and payment providers to improve global conversion and efficiency in billing flows.",
-        "Research and execute strategic projects that impact B2B and B2C, including the creation of new payment mechanisms.",
-        "Implement prototypes and experiments using practices such as MVP, A/B testing, and feature toggles for controlled rollout.",
-        "Solve challenges related to scalability, systems architecture, and code quality.",
-        "Ensure quality through automated testing and best engineering practices.",
+      achievements: [
+        "I was responsible for implementing a new unified purchasing flow so that the main user and their family members comply with the company's new guidelines (All must use the same payment method as default and use the same backup).",
+        "I worked at BR Tax Reform initiative with the goal of collect new personal information from users required by the new Brazilian payment law reform.",
+        "I was responsible for analyzing and reducing the use of unnecessary infrastructure resources.",
       ],
     },
     {
@@ -442,7 +439,6 @@ export default function Home() {
               period={experience.period}
               context={experience.context}
               achievements={experience.achievements}
-              activities={experience.activities}
             />
           ))}
         </div>
